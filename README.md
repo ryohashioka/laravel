@@ -9,6 +9,12 @@
 $ docker-compose up -d --build
 $ docker-compose exec app bash
 $ composer install
+$ php artisan key:generate
 ```
 
-TODO: laravel 9 で作り直す！
+### Linux 環境の場合、下記も実行
+```bash
+$ chmod 777 storage/logs/
+$ chmod 777 storage/framework/sessions/
+$ chmod 777 storage/framework/views/
+```
