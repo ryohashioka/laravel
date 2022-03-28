@@ -4,7 +4,7 @@ services:
     container_name: app  
     build: ./docker/php
     volumes:
-      - ./app:/var/www
+      - ./app:/var/www/app
   nginx:
     image: nginx 
     container_name: nginx
