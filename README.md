@@ -19,4 +19,5 @@ $ php artisan key:generate
 $ chmod 777 storage/logs/
 $ chmod 777 storage/framework/sessions/
 $ chmod 777 storage/framework/views/
+$ chmod 777 storage/framework/cache/
 ```
