@@ -8,7 +8,6 @@
 ```bash
 $ docker-compose up -d --build
 $ docker-compose exec app bash
-$ cd app
 $ composer install
 $ cp .env.example .env
 $ php artisan key:generate
@@ -20,4 +19,16 @@ $ chmod 777 storage/logs/
 $ chmod 777 storage/framework/sessions/
 $ chmod 777 storage/framework/views/
 $ chmod 777 storage/framework/cache/
+```
+
+### db
+```bash
+$ docker-compose exec api bash
+$ php artisan migrate
+$ exit
+```
+
+### テストデータを投入するとき
+```bash
+$ php artisan migrate:refresh --seed
 ```
