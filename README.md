@@ -23,7 +23,7 @@ $ chmod 777 storage/framework/cache/
 
 ### db
 ```bash
-$ docker-compose exec api bash
+$ docker-compose exec app bash
 $ php artisan migrate
 $ exit
 ```
