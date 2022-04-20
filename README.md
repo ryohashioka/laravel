@@ -8,7 +8,6 @@
 ```bash
 $ docker-compose up -d --build
 $ docker-compose exec app bash
-$ cd app
 $ composer install
 $ cp .env.example .env
 $ php artisan key:generate
