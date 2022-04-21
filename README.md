@@ -21,11 +21,15 @@ $ chmod 777 storage/framework/views/
 $ chmod 777 storage/framework/cache/
 ```
 
+### ui : Breeze
+```bash
+$ npm install
+$ npm run dev
+```
+
 ### db
 ```bash
-$ docker-compose exec app bash
 $ php artisan migrate
-$ exit
 ```
 
 ### テストデータを投入するとき
