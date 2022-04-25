@@ -20,3 +20,14 @@ $ chmod 777 storage/framework/sessions/
 $ chmod 777 storage/framework/views/
 $ chmod 777 storage/framework/cache/
 ```
+
+# Heroku デプロイ
+```
+$ heroku login
+$ heroku apps:create
+$ git remote add heroku https://git.heroku.com/<your-app-name>.git
+$ heroku buildpacks:add heroku/php -a <your-app-name>
+$ heroku buildpacks:add heroku/nodejs -a <your-app-name>
+$ heroku config:set APP_KEY=<your-laravel-app-key>
+$ git push heroku heroku:master
+```
