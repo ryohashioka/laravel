@@ -26,8 +26,9 @@ $ chmod 777 storage/framework/cache/
 $ heroku login
 $ heroku apps:create
 $ git remote add heroku https://git.heroku.com/<your-app-name>.git
-$ heroku buildpacks:add heroku/php -a <your-app-name>
-$ heroku buildpacks:add heroku/nodejs -a <your-app-name>
+$ heroku buildpacks:add https://github.com/lstoll/heroku-buildpack-monorepo
+$ heroku buildpacks:add heroku/php
+$ heroku config:add APP_BASE=app
 $ heroku config:set APP_KEY=<your-laravel-app-key>
 $ git push heroku heroku:master
 ```
