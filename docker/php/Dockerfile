@@ -21,3 +21,5 @@ ENV PATH $PATH:/composer/vendor/bin
 WORKDIR /var/www/app
 
 RUN composer global require "laravel/installer"
+
+RUN apt-get install -y nodejs npm && npm install n -g && n 16.16.0
