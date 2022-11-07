@@ -46,4 +46,8 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+Route::get('/tesla', function() {
+    return view('tesla');
+});
+
 require __DIR__.'/auth.php';
