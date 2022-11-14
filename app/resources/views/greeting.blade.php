@@ -15,7 +15,7 @@
     </head>
     <body>
         
-        @include('layouts.header')
+        @include('layouts.header2')
     
         <h1 class="bg-gray-900 text-white">Hello, {{ $name }}</h1>
         <div class="flex">
