@@ -17,13 +17,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/greeting', function () {
-    return '<h1>Hello World</h1>';
-});
+Route::get('/greeting/{code}', function ($code) {
+    return view('greeting', [ 'code' => $code ]);
+})->name('g');
 
 Route::get('/hoge', function () {
     return '<h1>Hoge</h1><div>hugahuga</div>';
-});
+})->name('h');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
