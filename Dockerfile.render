@@ -1,4 +1,4 @@
-# richarvey/nginx-php-fpmをベースとする
+# render デプロイ用の Dockerfile
 FROM richarvey/nginx-php-fpm:2.1.2
 
 COPY ./app .
