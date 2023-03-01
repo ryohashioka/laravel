@@ -1,4 +1,4 @@
-ls -al /var/www/html
+pwd
 
 #!/usr/bin/env bash
 echo "Running composer"
