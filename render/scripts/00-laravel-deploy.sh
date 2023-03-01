@@ -1,3 +1,5 @@
+ls -al /var/www/html
+
 #!/usr/bin/env bash
 echo "Running composer"
 composer global require hirak/prestissimo
