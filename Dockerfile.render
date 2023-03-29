@@ -19,10 +19,7 @@ ENV LOG_CHANNEL stderr
 # Allow composer to run as root
 ENV COMPOSER_ALLOW_SUPERUSER 1
 
-# RUN curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-# RUN apt-get upgrade
-# RUN apt-get install -y nodejs
-# RUN apt update
-# RUN apt install nodejs npm
+# node & npm install
+RUN apk add --no-cache nodejs npm
 
 CMD ["/start.sh"]

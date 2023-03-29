@@ -3,14 +3,7 @@ echo "Running composer"
 composer global require hirak/prestissimo
 composer install --no-dev --working-dir=/var/www/html
 
-echo "Running node"
-curl -fsSL https://deb.nodesource.com/setup_18.x | bash - &&\
-echo "========================="
-apt-get update
-echo "========================="
-apt-get install -y nodejs
-node -v
-npm -v
+echo "Running npm"
 npm ci
 
 echo "Caching config..."
