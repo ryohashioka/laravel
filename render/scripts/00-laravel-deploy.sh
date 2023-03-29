@@ -1,10 +1,11 @@
-apt -v
-apt-get -v
-
 #!/usr/bin/env bash
 echo "Running composer"
 composer global require hirak/prestissimo
 composer install --no-dev --working-dir=/var/www/html
+
+echo "Running node"
+curl -fsSL https://deb.nodesource.com/setup_18.x | bash - &&\
+apt-get install -y nodejs
 node -v
 npm -v
 npm ci
