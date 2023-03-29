@@ -2,6 +2,8 @@
 echo "Running composer"
 composer global require hirak/prestissimo
 composer install --no-dev --working-dir=/var/www/html
+node -v
+npm -v
 npm ci
 
 echo "Caching config..."
